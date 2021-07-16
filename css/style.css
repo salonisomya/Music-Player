@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+.home{
+position: relative;
+height: 100%;
+background: #FBE200;
+justify-content: center;
+display: flex;
+}
+#ear{
+position: absolute;
+height: 400px;
+left: 15.4px;
+justify-content: center;
+}
+.ep{
+width: 250px;
+}
+.container{
+background-color: white;
+position: absolute;
+display: flex;
+justify-content: center;
+width: 400px;
+align-items: center;
+background-color: #020415;
+}
+.up{
+position: absolute;
+width: 400px;
+height: 386px;
+top: 0px;
+display: flex;
+justify-content: center;
+}
+.upimg{
+width: 400px;
+height: 386px; 
+object-fit: cover;
+position: absolute; 
+}
+#music_name{
+font-size: 40px;
+font-style: italic;
+line-height: 120px;
+text-align: center;
+color: white;
+position: absolute;
+}
+#music_img{
+position: absolute;
+width: 182px;
+height: 183px;
+top: 116px;
+}
+#music_img img{
+border-radius: 91px;
+}
+.down{
+position: absolute;
+width: 400px;
+height: 437px;
+top: 188px;
+justify-content: center;
+}
+.audio{
+height:auto;
+}
+.progress-bar{
+position: absolute;
+width: 224px;
+height: 6px;
+left: 95px;
+top: 280px;
+display: flex;
+}
+#progressBar {
+appearance: none; 
+height: 5px;
+background: white;
+width: 224px;
+outline: none;
+border-radius: 30px;
+}
+#progressBar::-webkit-slider-thumb {
+appearance: none;
+height: 11px;
+width: 11px;
+outline: none; 
+background: #f94c57;
+border-radius: 30px;
+cursor: pointer;
+}
+.track-time {
+position: absolute;
+width: 415px;
+height: 18px;
+top: 293px;
+display: flex;
+justify-content: space-around;
+}
+#currentTime {
+font-family: "Lato", sans-serif;
+font-size: 1rem;
+color: white;
+}
+#durationTime {
+font-family: "Lato", sans-serif;
+font-size: 1rem;
+color: #f94c57;
+text-shadow: 0 0 15px white;
+}
+.music_control {
+position: absolute;
+width: 20rem;
+height: 23.34px;
+left: 44px;
+justify-content: space-between;
+display: flex;
+align-items: center;
+top: 360px;
+}
+.fas{
+color:#010529;
+font-size: 2rem;
+cursor: pointer;
+} 
+.fas:hover{
+color:whitesmoke;
+}
+.ep_anim{
+    animation:updown 6s linear infinite ;
+    }
+@keyframes updown {
+    0%{
+        transform:scale(0.5,1) ;
+    }
+     50%{
+        transform: scale(1,1.5);
+    }
+    100%{
+        transform: scale(.5,1);
+    }
+}
+.anim{
+    animation: rotateplay 8s linear infinite;
+}
+@keyframes rotateplay {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
